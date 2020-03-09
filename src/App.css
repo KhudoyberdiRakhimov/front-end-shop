@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root {
+  --mainGreen: #183a16;
+  --mainWhite: rgb(255, 255, 255);
+  --mainDark: #010c02;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Lato', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark) !important;
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-red {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: #c1024b !important;
+  border-radius: 0 !important;
+  border: 0.1rem solid #c1024b !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-red:hover {
+  background: #c1024b !important;
+  color: var(--mainWhite) !important;
+}
+.btn-green {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: #02c168 !important;
+  border-radius: 0 !important;
+  border: 0.1rem solid #02c168 !important;
+}
+.btn-green:hover {
+  background: #02c168 !important;
+  color: var(--mainWhite) !important;
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #c24802;
 }
